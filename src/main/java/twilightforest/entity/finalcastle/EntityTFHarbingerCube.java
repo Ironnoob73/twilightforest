@@ -1,4 +1,4 @@
-package twilightforest.entity;
+package twilightforest.entity.finalcastle;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
@@ -17,6 +17,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import twilightforest.TFSounds;
 import twilightforest.TwilightForestMod;
+import twilightforest.entity.EntityTFMinotaur;
+import twilightforest.entity.ITFCharger;
 import twilightforest.entity.ai.EntityAITFChargeAttack;
 
 public class EntityTFHarbingerCube extends EntityMob  implements ITFCharger {
@@ -34,7 +36,7 @@ public class EntityTFHarbingerCube extends EntityMob  implements ITFCharger {
 		this.tasks.addTask(1, new EntityAISwimming(this));
 		this.tasks.addTask(1, new EntityAITFChargeAttack(this, 4.0F, 1.0F,0.0F,256.0F,true));
 		this.tasks.addTask(1, new EntityAIWanderAvoidWater(this, 1.0D));
-		this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 16.0F));
+		this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 32.0F));
 		this.tasks.addTask(2, new EntityAILookIdle(this));
 		this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, false));
 		this.targetTasks.addTask(2, new EntityAINearestAttackableTarget<>(this, EntityPlayer.class, true));

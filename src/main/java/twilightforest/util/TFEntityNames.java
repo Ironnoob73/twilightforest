@@ -92,6 +92,7 @@ public class TFEntityNames {
 	public static final ResourceLocation HARBINGER_CUBE = prefix("harbinger_cube");
 	public static final ResourceLocation ADHERENT = prefix("adherent");
 	public static final ResourceLocation ROVING_CUBE = prefix("roving_cube");
+	public static final ResourceLocation BURSTING_CUBE = prefix("bursting_cube");
 	public static final ResourceLocation SLIDER = prefix("slider");
 	public static final ResourceLocation CASTLE_GUARDIAN = prefix("castle_guardian");
 

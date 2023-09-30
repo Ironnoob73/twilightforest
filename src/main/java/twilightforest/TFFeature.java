@@ -30,6 +30,8 @@ import net.minecraft.world.gen.MapGenBase;
 import net.minecraft.world.gen.structure.MapGenStructureIO;
 import twilightforest.biomes.TFBiomeBase;
 import twilightforest.entity.*;
+import twilightforest.entity.finalcastle.EntityTFAdherent;
+import twilightforest.entity.finalcastle.EntityTFHarbingerCube;
 import twilightforest.structures.*;
 import twilightforest.structures.courtyard.NagaCourtyardPieces;
 import twilightforest.structures.darktower.TFDarkTowerPieces;

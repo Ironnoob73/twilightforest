@@ -10,19 +10,20 @@ import net.minecraft.util.math.MathHelper;
 import org.lwjgl.opengl.GL11;
 import twilightforest.TwilightForestMod;
 import twilightforest.client.model.entity.ModelTFCubeOfAnnihilation;
+import twilightforest.entity.finalcastle.EntityTFBurstingCube;
 import twilightforest.entity.finalcastle.EntityTFRovingCube;
 
-public class RenderTFRovingCube extends Render<EntityTFRovingCube> {
+public class RenderTFBurstingCube extends Render<EntityTFBurstingCube> {
 
 	private static final ResourceLocation textureLoc = TwilightForestMod.getModelTexture("cubeofannihilation.png");
 	private final ModelBase model = new ModelTFCubeOfAnnihilation();
 
-	public RenderTFRovingCube(RenderManager manager) {
+	public RenderTFBurstingCube(RenderManager manager) {
 		super(manager);
 	}
 
 	@Override
-	public void doRender(EntityTFRovingCube entity, double x, double y, double z, float yaw, float partialTicks) {
+	public void doRender(EntityTFBurstingCube entity, double x, double y, double z, float yaw, float partialTicks) {
 		GlStateManager.pushMatrix();
 		GlStateManager.translate(x, y, z);
 
@@ -36,7 +37,7 @@ public class RenderTFRovingCube extends Render<EntityTFRovingCube> {
 		GlStateManager.enableBlend();
 		GlStateManager.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
-		GlStateManager.translate(0F, 0.75F, 0F);
+		GlStateManager.translate(0F, 0.25F, 0F);
 		this.model.render(entity, 0.0F, 0.0F, 0.0F, 0.0F, partialTicks, 0.0625F / 2F);
 		GlStateManager.enableLighting();
 		GlStateManager.disableBlend();
@@ -45,7 +46,7 @@ public class RenderTFRovingCube extends Render<EntityTFRovingCube> {
 	}
 
 	@Override
-	protected ResourceLocation getEntityTexture(EntityTFRovingCube entity) {
+	protected ResourceLocation getEntityTexture(EntityTFBurstingCube entity) {
 		return textureLoc;
 	}
 }

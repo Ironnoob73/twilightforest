@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.registries.IForgeRegistry;
 import twilightforest.TwilightForestMod;
 import twilightforest.entity.boss.*;
-import twilightforest.entity.finalcastle.EntityTFCastleGuardian;
+import twilightforest.entity.finalcastle.*;
 import twilightforest.entity.passive.*;
 import twilightforest.util.TFEntityNames;
 
@@ -143,6 +143,7 @@ public class TFEntities {
 		helper.registerEntity(TFEntityNames.HARBINGER_CUBE, EntityTFHarbingerCube.class, EntityTFHarbingerCube::new, 0x00000a, 0x8b0000);
 		helper.registerEntity(TFEntityNames.ADHERENT, EntityTFAdherent.class, EntityTFAdherent::new, 0x0a0000, 0x00008b);
 		helper.registerEntity(TFEntityNames.ROVING_CUBE, EntityTFRovingCube.class, EntityTFRovingCube::new, 0x0a0000, 0x00009b);
+		helper.registerEntity(TFEntityNames.BURSTING_CUBE, EntityTFBurstingCube.class, EntityTFBurstingCube::new, 150, 3, true);
 		helper.registerEntity(TFEntityNames.CASTLE_GUARDIAN, EntityTFCastleGuardian.class, EntityTFCastleGuardian::new, 80, 3, true);
 
 		helper.registerEntity(TFEntityNames.HYDRA_HEAD, EntityTFHydraHead.class, EntityTFHydraHead::new, 150, 3, false);
