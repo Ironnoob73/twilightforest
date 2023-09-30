@@ -627,9 +627,10 @@ entity.twilightforest.giant_miner.name=Giant Miner
 entity.twilightforest.armored_giant.name=Armored Giant
 entity.twilightforest.ice_crystal.name=Ice Crystal
 entity.twilightforest.rising_zombie.name=Zombie
-entity.twilightforest.apocalypse_cube.name=Apocalypse Cube [NYI]
-entity.twilightforest.adherent.name=Adherent [NYI]
-entity.twilightforest.castle_guardian.name=Castle Guardian [NYI]
+entity.twilightforest.apocalypse_cube.name=Apocalypse Cube
+entity.twilightforest.harbinger_cube.name=Harbinger Cube
+entity.twilightforest.adherent.name=Adherent
+entity.twilightforest.castle_guardian.name=Castle Guardian
 
 twilightforest.effect.frosted=Frosted
 

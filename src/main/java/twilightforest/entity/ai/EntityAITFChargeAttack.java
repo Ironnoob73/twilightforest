@@ -14,8 +14,8 @@ import twilightforest.util.EntityUtil;
 
 public class EntityAITFChargeAttack extends EntityAIBase {
 
-	private static final double MIN_RANGE_SQ = 16.0D;
-	private static final double MAX_RANGE_SQ = 64.0D;
+	private double MIN_RANGE_SQ = 16.0D;
+	private double MAX_RANGE_SQ = 64.0D;
 	private static final int FREQ = 1;
 
 	private EntityCreature charger;
@@ -25,6 +25,7 @@ public class EntityAITFChargeAttack extends EntityAIBase {
 	private double chargeZ;
 
 	protected float speed;
+	protected float rangeM;
 
 	private final boolean canBreak;
 
@@ -35,6 +36,20 @@ public class EntityAITFChargeAttack extends EntityAIBase {
 	public EntityAITFChargeAttack(EntityCreature entityLiving, float f, boolean canBreak) {
 		this.charger = entityLiving;
 		this.speed = f;
+		this.rangeM = 2.1F;
+		this.canBreak = canBreak;
+		this.windup = 0;
+		this.hasAttacked = false;
+		this.setMutexBits(3);
+	}
+
+	//Only for Harbinger Cube
+	public EntityAITFChargeAttack(EntityCreature entityLiving, float f, float r, float minrs, float maxrs, boolean canBreak) {
+		this.charger = entityLiving;
+		this.speed = f;
+		this.rangeM = r;
+		this.MIN_RANGE_SQ = minrs;
+		this.MAX_RANGE_SQ = maxrs;
 		this.canBreak = canBreak;
 		this.windup = 0;
 		this.hasAttacked = false;
@@ -122,7 +137,7 @@ public class EntityAITFChargeAttack extends EntityAIBase {
 		}
 
 		// attack the target when we get in range
-		double rangeSq = this.charger.width * 2.1F * this.charger.width * 2.1F;
+		double rangeSq = this.charger.width * rangeM * this.charger.width * rangeM;
 
 		if (this.charger.getDistanceSq(this.chargeTarget.posX, this.chargeTarget.getEntityBoundingBox().minY, this.chargeTarget.posZ) <= rangeSq) {
 			if (!this.hasAttacked) {

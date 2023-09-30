@@ -56,6 +56,13 @@
   "mob.tome.hurt": { "sounds": [ "twilightforest:mob/tome/hurt1", "twilightforest:mob/tome/hurt2", "twilightforest:mob/tome/hurt3" ] },
   "mob.tome.idle": { "sounds": [ "twilightforest:mob/tome/idle1", "twilightforest:mob/tome/idle2" ] },
   "mob.tome.parrot": { "sounds": [ { "type": "event", "name": "twilightforest:mob.tome.idle", "volume": 0.6, "pitch": 1.8 } ] },
+
+  "mob.harbinger_cube.ambient": { "sounds": [ "twilightforest:mob/finalcastle/harbinger_cube/ambient" ] },
+  "mob.harbinger_cube.step": { "sounds": [ "twilightforest:mob/finalcastle/harbinger_cube/step" ] },
+  "mob.harbinger_cube.hurt": { "sounds": [ "twilightforest:mob/finalcastle/harbinger_cube/hurt" ] },
+  "mob.harbinger_cube.death": { "sounds": [ "twilightforest:mob/finalcastle/harbinger_cube/death" ] },
+  "mob.harbinger_cube.charge": { "sounds": [ "twilightforest:mob/finalcastle/harbinger_cube/charge" ] },
+
   "random.slider": { "sounds": [ "twilightforest:random/creakgo2" ] },
   "music.bg": { "sounds": [
 	{ "name": "twilightforest:music/superstitious", "stream": true, "volume": 0.25 },

@@ -116,12 +116,12 @@ repositories {
         url 'https://blamejared.com/maven'
     }
     maven {
-        name 'player\'s Maven' // Forestry
-        url 'http://maven.ic2.player.to/'
+        name 'Curseforge Maven' // Baubles + Thaumcraft
+        url 'https://cursemaven.com'
     }
     maven {
-        name 'Curseforge Maven' // Baubles + Thaumcraft
-        url 'https://minecraft.curseforge.com/api/maven/'
+        name 'player\'s Maven' // Forestry
+        url 'http://maven.ic2.player.to/'
     }
 }
 
@@ -144,8 +144,10 @@ dependencies {
     deobfCompile "net.sengir.forestry:forestry_${minecraft_version}:${forestry_version}"
 
     // curseforge
-    deobfCompile "baubles:Baubles:${minecraft_sub_version}:${baubles_version}"
-    deobfCompile "thaumcraft:Thaumcraft:${minecraft_version}:${thaumcraft_version}"
+    //deobfCompile "baubles:Baubles:${minecraft_sub_version}:${baubles_version}"
+    //deobfCompile "thaumcraft:Thaumcraft:${minecraft_version}:${thaumcraft_version}"
+    deobfCompile "curse.maven:baubles-227083:2518667"
+    deobfCompile "curse.maven:thaumcraft-223628:2629023"
 }
 
 task createPom {
@@ -170,3 +172,32 @@ task createPom {
 }
 
 build.dependsOn createPom
+
+gradle
+import net.minecraftforge.gradle.tasks.DownloadAssetsTask
+import sun.misc.SharedSecrets
+import sun.misc.Unsafe
+
+void initConstantPool(Class<?> clazz) {
+    if (clazz != null && !clazz.interface) {
+        initConstantPool clazz.superclass
+
+        def constantPool = SharedSecrets.javaLangAccess.getConstantPool clazz
+        for (i in 0..constantPool.size) {
+            try {
+                constantPool.getStringAt i
+            } catch (def ignored) {}
+        }
+    }
+}
+
+void replaceString(String str1, String str2) {
+    String.class.getDeclaredField "value" with {
+        it.setAccessible true
+        it.set str1, str2.toCharArray()
+    }
+}
+
+// https://github.com/MinecraftForge/ForgeGradle/blob/FG_2.3/src/main/java/net/minecraftforge/gradle/tasks/DownloadAssetsTask.java#L189
+initConstantPool Unsafe.theUnsafe.allocateInstance(DownloadAssetsTask.GetAssetTask.class).class
+replaceString "http://resources.download.minecraft.net/", "https://resources.download.minecraft.net/"

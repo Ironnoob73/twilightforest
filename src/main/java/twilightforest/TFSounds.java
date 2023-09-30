@@ -71,6 +71,14 @@ public final class TFSounds {
 	public static final SoundEvent TOME_IDLE = createEvent("mob.tome.idle");
 	public static final SoundEvent TOME_PARROT = createEvent("mob.tome.parrot");
 
+
+	public static final SoundEvent HARBINGER_CUBE_AMBIENT = createEvent("mob.harbinger_cube.ambient");
+	public static final SoundEvent HARBINGER_CUBE_STEP = createEvent("mob.harbinger_cube.step");
+	public static final SoundEvent HARBINGER_CUBE_HURT = createEvent("mob.harbinger_cube.hurt");
+	public static final SoundEvent HARBINGER_CUBE_DEATH = createEvent("mob.harbinger_cube.death");
+	public static final SoundEvent HARBINGER_CUBE_CHARGE = createEvent("mob.harbinger_cube.charge");
+
+
 	public static final SoundEvent SLIDER = createEvent("random.slider");
 
 	public static final SoundEvent MUSIC = createEvent("music.bg");
