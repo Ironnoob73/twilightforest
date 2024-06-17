@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-13T14:23:30.5141507	Twilight Forest Block Tags
+// 1.20.1	2024-06-17T18:07:28.0502841	Twilight Forest Block Tags
 a10ef0864e630b44949959994b373ec7ee07dcb1 data/alexscaves/tags/blocks/ferromagnetic_blocks.json
 ddfcbead67bb9487c003af137a276963e5b20022 data/alexscaves/tags/blocks/gloomoth_light_sources.json
 c365018bd78f1335cd4508b5d74bc4500ae951bd data/alexscaves/tags/blocks/underzealot_light_sources.json
@@ -51,6 +51,7 @@ bb39f860aaf80d261eee2fc6cf18ee75a411d1c1 data/minecraft/tags/blocks/slabs.json
 60d2c0021214d67e32e5edc0ee008326caa52bf7 data/minecraft/tags/blocks/stairs.json
 0074c60e923669a4539ccbc5bd0c293f255ff5a5 data/minecraft/tags/blocks/standing_signs.json
 c15f20a0c7467da527d9bde3456b9eb9e6a86021 data/minecraft/tags/blocks/strider_warm_blocks.json
+3165fed2ce91572241aa737cf67aace0d095bc03 data/minecraft/tags/blocks/walls.json
 f1654e579781c2bce8d458efa0cdb304b5ad052c data/minecraft/tags/blocks/wall_hanging_signs.json
 8b7e0d4d896e5e197798d761800abbb1510d92e8 data/minecraft/tags/blocks/wall_signs.json
 21d68ed46d202a9b9c5b709deebf8105df972ec0 data/minecraft/tags/blocks/wither_immune.json

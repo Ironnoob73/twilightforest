@@ -376,6 +376,7 @@ public class TFCreativeTabs {
 				output.accept(TFBlocks.MOSSY_CASTLE_BRICK_STAIRS.get());
 				output.accept(TFBlocks.ENCASED_CASTLE_BRICK_STAIRS.get());
 				output.accept(TFBlocks.BOLD_CASTLE_BRICK_STAIRS.get());
+				output.accept(TFBlocks.CASTLE_BRICK_WALL.get());
 				output.accept(TFBlocks.PINK_CASTLE_RUNE_BRICK.get());
 				output.accept(TFBlocks.YELLOW_CASTLE_RUNE_BRICK.get());
 				output.accept(TFBlocks.BLUE_CASTLE_RUNE_BRICK.get());
