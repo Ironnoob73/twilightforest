@@ -111,6 +111,7 @@ public class BlockLootTables extends BlockLootSubProvider {
 		dropSelf(TFBlocks.MOSSY_CASTLE_BRICK_STAIRS.get());
 		dropSelf(TFBlocks.ENCASED_CASTLE_BRICK_STAIRS.get());
 		dropSelf(TFBlocks.BOLD_CASTLE_BRICK_STAIRS.get());
+		dropSelf(TFBlocks.CASTLE_BRICK_WALL.get());
 		dropSelf(TFBlocks.VIOLET_CASTLE_RUNE_BRICK.get());
 		dropSelf(TFBlocks.YELLOW_CASTLE_RUNE_BRICK.get());
 		dropSelf(TFBlocks.PINK_CASTLE_RUNE_BRICK.get());

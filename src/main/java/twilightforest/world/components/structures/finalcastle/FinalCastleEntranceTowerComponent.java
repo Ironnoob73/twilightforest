@@ -42,7 +42,7 @@ public class FinalCastleEntranceTowerComponent extends FinalCastleMazeTower13Com
 		roof.addChildren(this, list, rand);
 
 		// how many floors until the bottom?
-		int missingFloors = (this.boundingBox.minY() - 127) / 8;
+		int missingFloors = (this.boundingBox.minY() - 104) / 8;
 
 		// place half on the bottom
 		int bottomFloors = missingFloors / 2;
@@ -63,7 +63,7 @@ public class FinalCastleEntranceTowerComponent extends FinalCastleMazeTower13Com
 		}
 
 		// add bottom tower
-		FinalCastleEntranceBottomTowerComponent eTower = new FinalCastleEntranceBottomTowerComponent(this.getGenDepth() + 1, this.boundingBox.minX() + 6, this.boundingBox.minY() - (middleFloors * 8), this.boundingBox.minZ() + 6, bottomFloors + 1, bottomFloors, facing.getOpposite());
+		FinalCastleEntranceBottomTowerComponent eTower = new FinalCastleEntranceBottomTowerComponent(this.getGenDepth() + 1, this.boundingBox.minX() + 6, this.boundingBox.minY() - (middleFloors * 8) , this.boundingBox.minZ() + 6, bottomFloors + 1, bottomFloors, facing.getOpposite());
 		list.addPiece(eTower);
 		eTower.addChildren(this, list, rand);
 

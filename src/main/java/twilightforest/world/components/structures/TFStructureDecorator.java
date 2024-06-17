@@ -25,6 +25,7 @@ public class TFStructureDecorator {
 	public BlockState roofState = Blocks.STONE_BRICKS.defaultBlockState();
 
 	public StructurePiece.BlockSelector randomBlocks = new StrongholdStones();
+	public StructurePiece.BlockSelector randomStairs = new StrongholdStairs();
 
 	public static String getDecoString(TFStructureDecorator deco) {
 		if (deco instanceof StructureDecoratorDarkTower) {

@@ -42,7 +42,11 @@ public class FinalCastleLargeTowerComponent extends TowerWingComponent {
 			this.deco = ((TFStructureComponentOld) parent).deco;
 		}
 		// add crown
-		FinalCastleRoof9CrenellatedComponent roof = new FinalCastleRoof9CrenellatedComponent(4, this, getLocatorPosition().getX(), getLocatorPosition().getY(), getLocatorPosition().getZ());
+		//FinalCastleRoof9CrenellatedComponent roof = new FinalCastleRoof9CrenellatedComponent(4, this, getLocatorPosition().getX(), getLocatorPosition().getY(), getLocatorPosition().getZ());
+		//list.addPiece(roof);
+		//roof.addChildren(this, list, rand);
+		// add roof
+		TFStructureComponentOld roof = new FinalCastleRoof13CrenellatedComponent(4, this, getLocatorPosition().getX(), getLocatorPosition().getY(), getLocatorPosition().getZ());
 		list.addPiece(roof);
 		roof.addChildren(this, list, rand);
 	}
