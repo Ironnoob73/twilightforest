@@ -1,9 +1,6 @@
 {
   "values": [
-<<<<<<< Updated upstream
-    "twilightforest:wrought_iron_fence"
-=======
-    "twilightforest:castle_birck_wall"
->>>>>>> Stashed changes
+    "twilightforest:wrought_iron_fence",
+    "twilightforest:castle_brick_wall"
   ]
 }

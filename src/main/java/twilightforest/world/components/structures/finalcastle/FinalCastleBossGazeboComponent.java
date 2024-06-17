@@ -68,12 +68,11 @@ public class FinalCastleBossGazeboComponent extends TFStructureComponentOld {
 		this.generateBox(world, sbb, 0, 11, 0, 0, 11, 20, state, state, false);
 		this.generateBox(world, sbb, 20, 11, 0, 20, 11, 20, state, state, false);
 
-		this.willBeAddingFinalBossSoon(world, sbb);
+		//this.willBeAddingFinalBossSoon(world, sbb);
 
-		// placeBlock(world, TFBlocks.boss_spawner_final_boss.get().defaultBlockState(), 10, 1, 10, sbb);
+		placeBlock(world, TFBlocks.FINAL_BOSS_BOSS_SPAWNER.get().defaultBlockState(), 10, 1, 10, sbb);
 	}
 
-<<<<<<< Updated upstream
 	public static final String INTERACTION_TAG = "final_castle_wip";
 
 	private void willBeAddingFinalBossSoon(WorldGenLevel world, BoundingBox sbb) {
@@ -111,13 +110,5 @@ public class FinalCastleBossGazeboComponent extends TFStructureComponentOld {
 			interaction.setPos(center.x, punchBox.minY, center.z);
 			world.addFreshEntity(interaction);
 		}
-=======
-		//setInvisibleTextEntity(world, 10, 0, 10, sbb, "Final Castle WIP.", true, 2.3f);
-		//setInvisibleTextEntity(world, 10, 0, 10, sbb, "Join our Discord server to",true, 1.3f);
-		//setInvisibleTextEntity(world, 10, 0, 10, sbb, "follow development of the mod:",true, 1.0f);
-		//setInvisibleTextEntity(world, 10, 0, 10, sbb, "discord.experiment115.com", true, 0.7f);
-
-		placeBlock(world, TFBlocks.FINAL_BOSS_BOSS_SPAWNER.get().defaultBlockState(), 10, 1, 10, sbb);
->>>>>>> Stashed changes
 	}
 }

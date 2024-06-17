@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
-// 1.20.6	2024-06-05T20:14:53.3941515	Loot Tables
+// 1.20.6	2024-06-17T16:29:43.4111972	Loot Tables
 e359421e93c03f9b33ec738b61a875ad9b88b504 data/twilightforest/loot_tables/aurora_cache.json
 81271636fc9a92d48fef83c8218cfe3df48433cd data/twilightforest/loot_tables/aurora_room.json
 6b7c07d237e56f84d11d308552cd943af7a906e5 data/twilightforest/loot_tables/basement.json
-=======
-// 1.20.1	2024-06-17T03:17:43.3181661	Loot Tables
->>>>>>> Stashed changes
 afe7197a19b997d2f5c5980d9805b6093191b44f data/twilightforest/loot_tables/blocks/acacia_banister.json
 d29388fb46e8211e8d3624b744d195b3a6f4c6ff data/twilightforest/loot_tables/blocks/alpha_yeti_trophy.json
 3f04f0369241cf99202c72b4d56bc5368396e367 data/twilightforest/loot_tables/blocks/alpha_yeti_wall_trophy.json
@@ -50,9 +46,9 @@ d7c96c0f0620d62039854b460fb33c2952fb638f data/twilightforest/loot_tables/blocks/
 6b9c1460a4da6e481dc7d6f2e094b7a59aca43f8 data/twilightforest/loot_tables/blocks/carminite_block.json
 653ff2e505733dc78002678eed8945c18bb54d1c data/twilightforest/loot_tables/blocks/carminite_builder.json
 c990224139c9123e076e38658d20ad484e9c0d58 data/twilightforest/loot_tables/blocks/carminite_reactor.json
-ee5f83056a15418f0868e62f30d0793614caf242 data/twilightforest/loot_tables/blocks/castle_birck_wall.json
 6dd8240fd4bd25d53f1bc44e7207f41023f92d30 data/twilightforest/loot_tables/blocks/castle_brick.json
 b71dd6d186bf83d00249eac97ad4b922ee1de879 data/twilightforest/loot_tables/blocks/castle_brick_stairs.json
+c1ec31261eaf078f0a8919d8a9370bebf3c1aeb6 data/twilightforest/loot_tables/blocks/castle_brick_wall.json
 76035788ae39e6c28b16397182db82fcb6ef93a9 data/twilightforest/loot_tables/blocks/castle_roof_tile.json
 52d2c37ee181120d1cc2e403b1f68654e9e525d1 data/twilightforest/loot_tables/blocks/cherry_banister.json
 3e4ef25a370f63e4f3ac33f5e0b96cac7975d94b data/twilightforest/loot_tables/blocks/chiseled_canopy_bookshelf.json

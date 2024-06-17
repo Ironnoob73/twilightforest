@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "twilightforest:castle_birck_wall"
+          "name": "twilightforest:castle_brick_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "twilightforest:blocks/castle_birck_wall"
+  "random_sequence": "twilightforest:blocks/castle_brick_wall"
 }
