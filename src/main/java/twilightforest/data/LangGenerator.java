@@ -272,6 +272,7 @@ public class LangGenerator extends TFLangProvider {
 		this.add(TFBlocks.WORN_CASTLE_BRICK_STAIRS.get(), "Worn Castle Brick Stairs");
 		this.add(TFBlocks.ENCASED_CASTLE_BRICK_STAIRS.get(), "Encased Castle Brick Stairs");
 		this.add(TFBlocks.BOLD_CASTLE_BRICK_STAIRS.get(), "Bold Castle Brick Stairs");
+		this.add(TFBlocks.CASTLE_BRICK_WALL.get(), "Castle Brick Wall");
 
 		this.add(TFBlocks.PINK_CASTLE_RUNE_BRICK.get(), "Magenta Castle Rune Brick");
 		this.add(TFBlocks.YELLOW_CASTLE_RUNE_BRICK.get(), "Yellow Castle Rune Brick");

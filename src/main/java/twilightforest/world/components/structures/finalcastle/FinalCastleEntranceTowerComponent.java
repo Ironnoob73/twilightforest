@@ -42,7 +42,7 @@ public class FinalCastleEntranceTowerComponent extends FinalCastleMazeTower13Com
 		roof.addChildren(this, list, rand);
 
 		// how many floors until the bottom?
-		int missingFloors = (this.boundingBox.minY() - 127) / 8;
+		int missingFloors = (this.boundingBox.minY() - 104) / 8;
 
 		// place half on the bottom
 		int bottomFloors = missingFloors / 2;

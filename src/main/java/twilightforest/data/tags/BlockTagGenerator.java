@@ -99,7 +99,7 @@ public class BlockTagGenerator extends ModdedBlockTagGenerator {
 	@Override
 	protected void addTags(HolderLookup.Provider provider) {
 		super.addTags(provider);
-		tag(TWILIGHT_OAK_LOGS)
+		this.tag(TWILIGHT_OAK_LOGS)
 				.add(TFBlocks.TWILIGHT_OAK_LOG.get(), TFBlocks.STRIPPED_TWILIGHT_OAK_LOG.get(), TFBlocks.TWILIGHT_OAK_WOOD.get(), TFBlocks.STRIPPED_TWILIGHT_OAK_WOOD.get());
 		tag(CANOPY_LOGS)
 				.add(TFBlocks.CANOPY_LOG.get(), TFBlocks.STRIPPED_CANOPY_LOG.get(), TFBlocks.CANOPY_WOOD.get(), TFBlocks.STRIPPED_CANOPY_WOOD.get());
@@ -191,6 +191,8 @@ public class BlockTagGenerator extends ModdedBlockTagGenerator {
 				.add(TFBlocks.POTTED_TWILIGHT_OAK_SAPLING.get(), TFBlocks.POTTED_CANOPY_SAPLING.get(), TFBlocks.POTTED_MANGROVE_SAPLING.get(), TFBlocks.POTTED_DARKWOOD_SAPLING.get(), TFBlocks.POTTED_RAINBOW_OAK_SAPLING.get())
 				.add(TFBlocks.POTTED_HOLLOW_OAK_SAPLING.get(), TFBlocks.POTTED_TIME_SAPLING.get(), TFBlocks.POTTED_TRANSFORMATION_SAPLING.get(), TFBlocks.POTTED_MINING_SAPLING.get(), TFBlocks.POTTED_SORTING_SAPLING.get())
 				.add(TFBlocks.POTTED_MAYAPPLE.get(), TFBlocks.POTTED_FIDDLEHEAD.get(), TFBlocks.POTTED_MUSHGLOOM.get(), TFBlocks.POTTED_THORN.get(), TFBlocks.POTTED_GREEN_THORN.get(), TFBlocks.POTTED_DEAD_THORN.get());
+
+		tag(BlockTags.WALLS).add(TFBlocks.CASTLE_BRICK_WALL.get());
 
 		tag(BANISTERS).add(
 				TFBlocks.OAK_BANISTER.get(),
@@ -320,7 +322,7 @@ public class BlockTagGenerator extends ModdedBlockTagGenerator {
 				TFBlocks.MANGROVE_WALL_HANGING_SIGN.get(), TFBlocks.DARK_WALL_HANGING_SIGN.get(),
 				TFBlocks.TIME_WALL_HANGING_SIGN.get(), TFBlocks.TRANSFORMATION_WALL_HANGING_SIGN.get(),
 				TFBlocks.MINING_WALL_HANGING_SIGN.get(), TFBlocks.SORTING_WALL_HANGING_SIGN.get());
-		
+
 		tag(TOWERWOOD).add(TFBlocks.TOWERWOOD.get(), TFBlocks.MOSSY_TOWERWOOD.get(), TFBlocks.CRACKED_TOWERWOOD.get(), TFBlocks.INFESTED_TOWERWOOD.get());
 
 		tag(MAZESTONE).add(
@@ -516,7 +518,7 @@ public class BlockTagGenerator extends ModdedBlockTagGenerator {
 
 		tag(STRUCTURE_BANNED_INTERACTIONS).add(Blocks.LEVER).add(TFBlocks.ANTIBUILDER.get()).addTags(BlockTags.BUTTONS, Tags.Blocks.CHESTS);
 
-		// TODO add more grave mods to this list 
+		// TODO add more grave mods to this list
 		tag(PROGRESSION_ALLOW_BREAKING)
 				.add(TFBlocks.KEEPSAKE_CASKET.get())
 				.addOptional(new ResourceLocation("gravestone", "gravestone"));

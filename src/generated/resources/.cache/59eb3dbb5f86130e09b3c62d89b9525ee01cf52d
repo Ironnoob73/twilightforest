@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-13T14:38:56.4750071	Loot Tables
+// 1.20.1	2024-06-17T17:20:27.6490027	Loot Tables
 afe7197a19b997d2f5c5980d9805b6093191b44f data/twilightforest/loot_tables/blocks/acacia_banister.json
 d29388fb46e8211e8d3624b744d195b3a6f4c6ff data/twilightforest/loot_tables/blocks/alpha_yeti_trophy.json
 3f04f0369241cf99202c72b4d56bc5368396e367 data/twilightforest/loot_tables/blocks/alpha_yeti_wall_trophy.json
@@ -42,6 +42,7 @@ d497557999869c0603bc3083a041efa93db51a3b data/twilightforest/loot_tables/blocks/
 c990224139c9123e076e38658d20ad484e9c0d58 data/twilightforest/loot_tables/blocks/carminite_reactor.json
 6dd8240fd4bd25d53f1bc44e7207f41023f92d30 data/twilightforest/loot_tables/blocks/castle_brick.json
 b71dd6d186bf83d00249eac97ad4b922ee1de879 data/twilightforest/loot_tables/blocks/castle_brick_stairs.json
+c1ec31261eaf078f0a8919d8a9370bebf3c1aeb6 data/twilightforest/loot_tables/blocks/castle_brick_wall.json
 76035788ae39e6c28b16397182db82fcb6ef93a9 data/twilightforest/loot_tables/blocks/castle_roof_tile.json
 52d2c37ee181120d1cc2e403b1f68654e9e525d1 data/twilightforest/loot_tables/blocks/cherry_banister.json
 b4c4d5b0a0e5856830258bb102c88764f346bd9d data/twilightforest/loot_tables/blocks/cicada.json
